@@ -1,17 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>My Application</title>
-    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .bgColor {background-color: black;}
+        .awesomeFont{font-family: 'Permanent Marker', cursive;}
+        .navbar {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 50px;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
-<body>
+<body class="bgColor awesomeFont">
 
-    <div class="container">
-        <h1>Hello There!</h1>
-        <p>To get started, edit <code>src/index.js</code>.</p>
+<!--Navbar with Title and Submit button for ease of use-->
+<nav class="navbar navbar-light bgColor text-center">
+    <span class="navbar-brand mb-0 h1 text-white " style="font-size: 38px">Movie Knight</span>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+        Add New Movie
+    </button>
+</nav>
+
+<!--CSS loading gif as stated in requirements-->
+<div id="loadingCircle" class="loader mx-auto"></div>
+<div class="container">
+    <div id="movieStuff" class="row "></div>
+</div>
+
+<!-- Pop-up modal form for editing and submitting new movie entries -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Add/Edit Movie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <form>
+                    <label for="mName">Movie Title:</label><br>
+                    <input type="text" id="mName">
+                    <br>
+                    <label for="rating">Movie Rating:</label><br>
+                    <input type="text" id="rating">
+                    <br>
+                    <label for="genre">Movie Genre:</label><br>
+                    <input type="text" id="genre">
+                    <br>
+                    <input type="hidden" id="theMovieId">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" id="submitButton" class="btn btn-primary">
+            </div>
+        </div>
     </div>
+</div>
 
-    <script src="./main.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>

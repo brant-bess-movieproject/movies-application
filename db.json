@@ -1,14 +1,72 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "4",
-      "id": 1
+      "title": "Nightcrawler",
+      "rating": 6,
+      "id": 8,
+      "genre": "Suspense",
+      "img": "https://m.media-amazon.com/images/M/MV5BN2U1YzdhYWMtZWUzMi00OWI1LWFkM2ItNWVjM2YxMGQ2MmNhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
     },
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "id": 2
+      "title": "Die Hard",
+      "rating": 4,
+      "id": 9,
+      "genre": "Action",
+      "img": "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    },
+    {
+      "title": "Akira",
+      "rating": 5,
+      "id": 10,
+      "genre": "Anime",
+      "img": "https://m.media-amazon.com/images/M/MV5BM2ZiZTk1ODgtMTZkNS00NTYxLWIxZTUtNWExZGYwZTRjODViXkEyXkFqcGdeQXVyMTE2MzA3MDM@._V1_SX300.jpg"
+    },
+    {
+      "title": "Eyes Wide Shut",
+      "rating": 5,
+      "genre": "Suspense",
+      "id": 11,
+      "img": "https://m.media-amazon.com/images/M/MV5BMjA5NTUwNjI1N15BMl5BanBnXkFtZTYwOTE1ODc5._V1_SX300.jpg"
+    },
+    {
+      "title": "Drive",
+      "rating": 5,
+      "genre": "Vaporwave",
+      "id": 12,
+      "img": "https://m.media-amazon.com/images/M/MV5BZjY5ZjQyMjMtMmEwOC00Nzc2LTllYTItMmU2MzJjNTg1NjY0XkEyXkFqcGdeQXVyNjQ1MTMzMDQ@._V1_SX300.jpg"
+    },
+    {
+      "title": "Fight Club",
+      "rating": 5,
+      "genre": "Drama",
+      "id": 13,
+      "img": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    },
+    {
+      "title": "Blade runner",
+      "rating": 5,
+      "genre": "Sci-Fi",
+      "id": 14,
+      "img": "https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+    },
+    {
+      "title": "Bladerunner(2017)",
+      "rating": 4,
+      "genre": "Sci-Fi",
+      "id": 15
+    },
+    {
+      "title": "Blade Runner 2049",
+      "rating": 5,
+      "genre": "Sci-Fi",
+      "id": 16,
+      "img": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX300.jpg"
+    },
+    {
+      "title": "",
+      "rating": null,
+      "genre": "",
+      "id": 17
     }
   ]
 }
