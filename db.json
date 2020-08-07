@@ -1,39 +1,11 @@
 {
   "movies": [
     {
-      "title": "Nightcrawler",
-      "rating": 6,
-      "id": 8,
-      "genre": "Suspense",
-      "img": "https://m.media-amazon.com/images/M/MV5BN2U1YzdhYWMtZWUzMi00OWI1LWFkM2ItNWVjM2YxMGQ2MmNhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-    },
-    {
-      "title": "Die Hard",
-      "rating": 4,
-      "id": 9,
-      "genre": "Action",
-      "img": "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-    },
-    {
       "title": "Akira",
       "rating": 5,
       "id": 10,
       "genre": "Anime",
       "img": "https://m.media-amazon.com/images/M/MV5BM2ZiZTk1ODgtMTZkNS00NTYxLWIxZTUtNWExZGYwZTRjODViXkEyXkFqcGdeQXVyMTE2MzA3MDM@._V1_SX300.jpg"
-    },
-    {
-      "title": "Eyes Wide Shut",
-      "rating": 5,
-      "genre": "Suspense",
-      "id": 11,
-      "img": "https://m.media-amazon.com/images/M/MV5BMjA5NTUwNjI1N15BMl5BanBnXkFtZTYwOTE1ODc5._V1_SX300.jpg"
-    },
-    {
-      "title": "Drive",
-      "rating": 5,
-      "genre": "Vaporwave",
-      "id": 12,
-      "img": "https://m.media-amazon.com/images/M/MV5BZjY5ZjQyMjMtMmEwOC00Nzc2LTllYTItMmU2MzJjNTg1NjY0XkEyXkFqcGdeQXVyNjQ1MTMzMDQ@._V1_SX300.jpg"
     },
     {
       "title": "Fight Club",
@@ -56,17 +28,98 @@
       "id": 15
     },
     {
-      "title": "Blade Runner 2049",
-      "rating": 5,
-      "genre": "Sci-Fi",
-      "id": 16,
-      "img": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX300.jpg"
-    },
-    {
       "title": "",
       "rating": null,
       "genre": "",
       "id": 17
+    },
+    {
+      "title": "donnie Darko",
+      "rating": 5,
+      "genre": "Sci-Fi",
+      "id": 18,
+      "img": "https://m.media-amazon.com/images/M/MV5BZjZlZDlkYTktMmU1My00ZDBiLWFlNjEtYTBhNjVhOTM4ZjJjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+    },
+    {
+      "title": "Eyes Wide Shut",
+      "rating": 5,
+      "genre": "Suspense",
+      "id": 19,
+      "img": "https://m.media-amazon.com/images/M/MV5BMjA5NTUwNjI1N15BMl5BanBnXkFtZTYwOTE1ODc5._V1_SX300.jpg"
+    },
+    {
+      "title": "The Matrix",
+      "rating": 5,
+      "genre": "Sci-Fi",
+      "id": 22,
+      "img": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+    },
+    {
+      "title": "Gantz :0",
+      "rating": 3,
+      "genre": "Anime",
+      "id": 24
+    },
+    {
+      "title": "Gantz: 0",
+      "rating": 4,
+      "genre": "anime",
+      "id": 25
+    },
+    {
+      "title": "Beyond The Pines",
+      "rating": 3,
+      "genre": "Noir",
+      "id": 26,
+      "img": "https://m.media-amazon.com/images/M/MV5BMjc1OTEwNjU4N15BMl5BanBnXkFtZTcwNzUzNDIwOQ@@._V1_SX300.jpg"
+    },
+    {
+      "title": "Sword Fish",
+      "rating": 3,
+      "genre": "Action",
+      "id": 27
+    },
+    {
+      "title": "SWORDFISH",
+      "rating": 3,
+      "genre": "ACTION ",
+      "id": 28,
+      "img": "https://m.media-amazon.com/images/M/MV5BNzk5ZmQxMWYtM2QyNi00MTY3LTlmNjItYjUwODY3Y2YwOTIwXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+    },
+    {
+      "title": "THE FIRM",
+      "rating": 3,
+      "genre": "SUSPENSE",
+      "id": 29,
+      "img": "https://m.media-amazon.com/images/M/MV5BMTgxMjM5NDYwM15BMl5BanBnXkFtZTgwODkzMzk5MDE@._V1_SX300.jpg"
+    },
+    {
+      "title": "SPACE ODYSSEY",
+      "rating": 5,
+      "genre": "SCI-FI",
+      "id": 30,
+      "img": "https://m.media-amazon.com/images/M/MV5BMmNlYzRiNDctZWNhMi00MzI4LThkZTctMTUzMmZkMmFmNThmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    },
+    {
+      "title": "interstellar",
+      "rating": 5,
+      "genre": "sci-fi",
+      "id": 31,
+      "img": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+    },
+    {
+      "title": "El Camino",
+      "rating": 4,
+      "genre": "Neo-Western",
+      "id": 32,
+      "img": "https://m.media-amazon.com/images/M/MV5BNjk4MzVlM2UtZGM0ZC00M2M1LThkMWEtZjUyN2U2ZTc0NmM5XkEyXkFqcGdeQXVyOTAzMTc2MjA@._V1_SX300.jpg"
+    },
+    {
+      "title": "Saving Private Ryan",
+      "rating": 5,
+      "genre": "War",
+      "id": 33,
+      "img": "https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg"
     }
   ]
 }

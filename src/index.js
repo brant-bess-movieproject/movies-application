@@ -14,7 +14,6 @@ const movieImg = require("./keys.js").default;
 function fetchPoster(movieTitle) {
     return fetch(`http://www.omdbapi.com/?apikey=${movieImg}&s=${encodeURIComponent(movieTitle)}`).then((response) => response.json())
 }
-
 //building and populating card with html containing all movie properties
 function buildCard(title, rating, id, genre, img) {
     var html = $('#movieStuff').html()
@@ -34,11 +33,9 @@ function buildCard(title, rating, id, genre, img) {
                                 <button class="editButton btn btn-primary w-50"  data-id="${id}">Edit</button> 
                                 </div>                           
                             </footer>
-                         </div>
-                         
+                         </div>    
                  </div>
-            </div>
-            `);
+            </div>`);
 }
 
 //clears forms on editing and submitting
@@ -49,11 +46,15 @@ function clearForms() {
     formId.val("");
 }
 
+
+
 let currentMovies = [];
 const refresh = () => {
     getMovies().then((movies) => {
         currentMovies = movies;
+        console.log(currentMovies);
         $("#loadingCircle").hide();
+        console.log('Here are all the movies:');
         $('#movieStuff').html("");
         movies.forEach(({title, rating, id, genre, img}, idx) => {
             var html = $('#movieStuff').html();
@@ -65,14 +66,17 @@ const refresh = () => {
                     img = imgUrl;
                     editMovie({id: id, img: imgUrl});
                     buildCard(title, rating, id, genre, img);
+                    // if (idx % 5 === 0) {
+                    //     $('#movieStuff').html(html + `<div class="w-100"></div>`);
+                    // }
                 })
             } else {
                 buildCard(title, rating, id, genre, img);
+                // if (idx % 5 === 0) {
+                //     $('#movieStuff').html(html + `<div class="w-100"></div>`);
+                // }
             }
 
-            if (idx % 5 === 0) {
-                $('#movieStuff').html(html + `<div class="w-100"></div>`);
-            }
         });
 
         addingEditButtonEventListener();
@@ -118,6 +122,7 @@ $('#submitButton').click(function (e) {
     var newMovieRating = $('#rating').val();
     if (formId.val() === "") {
         postMovie({title: newMovieName, rating: parseInt(newMovieRating), genre: formGenre.val()}).then(() => {
+            window.scrollTo(0,document.body.scrollHeight);
             $(this).attr('disabled', false)
             clearForms()
             refresh()
